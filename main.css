@@ -1,0 +1,294 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 100;
+  font-family: arial,sans-serif;
+  font-size: small;
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  
+}
+
+html, body {
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 1px rgba(var(--b6a,219,219,219),1);
+
+}
+
+.grey_text {
+  color: #8e8e8e;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/*  TOP PAGE  */
+
+.header {
+  height: 54px;
+  margin-bottom: 25px;
+  border-top: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  justify-content: center;
+  background-color: #FFFFFF;
+
+}
+
+.top {
+  width: 975px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header_icons img {
+  height: 22px;
+  width: 22px;
+  margin: 0 0 0 20px
+}
+
+input {
+  background-color: rgba(var(--b3f,250,250,250),1);
+  border-radius: 4px;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  height: 28px;
+  width: 215px;
+}
+
+/*  Main Page L+R  (this might no longer be valid after making the right portion of screen fixed)*/
+
+.main {
+  justify-content: center;
+}
+
+.middle {
+  width: 975px;
+  justify-content: space-between;
+}
+
+
+/*  LEFT PAGE  */
+
+.lef_screen_side.grid {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 640px;
+  grid-template-rows: 874px;
+  grid-auto-flow: row;
+  width: 641px;
+  height: 874px;
+
+}
+
+.single_post {
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.insta_pic {
+  width: 639px;
+}
+
+.pic_name_dots {
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+
+.poster_name{
+  padding: 7px 0 0 0;
+  margin: 0 0 0 15px
+}
+
+.pic_name_dots #poster_pic {
+  height: 35px;
+  width: 35px;
+}
+
+.pic_name_dots #dots {
+  height: 22px;
+  width: 22px;
+}
+
+.post_icons {
+  height: 32px;
+  justify-content: space-between;
+  padding: 7px 16px 0 0;
+}
+
+.post_icons img {
+  height: 22px;
+  width: 22px;
+  margin: 0 0 0 20px
+}
+
+.time_ago_line p, .caption_line p, .like_line p {
+  margin: 5px 0 5px 0;
+}
+
+.comment_box {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 0 0;
+  height: 56px;
+  border-top: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.comment input {
+  width: 556px;
+  background-color: inherit;
+  border: 0px;
+}
+
+.comment input:focus {
+  outline: none;
+}
+
+.like_line, .caption_line, .time_ago_line, .comment input {
+  margin: 0 0 0 20px;
+}
+
+
+/*  RIGHT PAGE  */
+
+.right_user_side {
+  width: 300px;
+  height: 612px;
+  position:fixed;
+  left: 62.3%;
+
+}
+
+.user_info {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 0 0 0 5px;
+  margin: 0 0 12px 0;
+
+}
+
+.user_info img {
+  height: 50px;
+  width: 50px;
+}
+
+.insta_names {
+  margin-left: 14px;
+}
+
+
+
+/* Stories Box */
+
+.stories {
+  height: 222px;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.headings {
+  height: 18px;
+  justify-content: space-between;
+  margin: 12px 0 0;
+  padding: 4px 16px;
+}
+
+.scroll_sotories.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px;
+  grid-auto-flow: row;
+  height: 180px;
+  overflow: auto;
+  margin-top: 10px;
+  
+}
+
+
+.name_time {
+  margin-left: 14px;
+}
+
+.story_content {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+
+  padding: 0 0 0 15px;
+
+}
+
+.story_content img {
+  height: 35px;
+  width: 35px;
+}
+
+/* Suggestions Box */
+.suggestions {
+  background-color: #FFFFFF;
+  height: 196px;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-radius: 4px;
+  margin: 12px 0;
+}
+
+.recomendation.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: 164px;
+  padding: 5px 0 0 0;
+}
+
+
+.rec1 {
+  grid-row: 1;
+}
+
+.rec2 {
+  grid-row: 2;
+}
+
+.rec3 {
+  grid-row: 3;
+}
+
+.name_follow {
+  margin-left: 14px;
+}
+
+.rec {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 0 0 0 15px;
+
+}
+
+.rec img {
+  height: 35px;
+  width: 35px;
+}
+
+/* About Box */
+
+.about_section {
+  height: 105px;
+  padding-bottom: 5px;
+}
+
+.about_section p {
+  font-size: smaller;
+  color: #c7c7c7;
+}
+.line3 {
+  margin: 30px 0 0 0;
+}
